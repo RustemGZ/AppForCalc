@@ -12,7 +12,7 @@ namespace AppForCalc.Controllers
         {
             DataTable dt = new DataTable();
             var v = dt.Compute(x.Replace(" ", "+"), "");
-            ViewBag.Message = v;
+            ViewBag.Message = v+" успех (:";
             return View();
         }
 
